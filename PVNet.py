@@ -93,7 +93,7 @@ class PVNet2():
         self.session.run(init)
         self.saver = tf.train.Saver()
         
-        
+        '''
         self.board_width = board_width
         self.board_height = board_height
 
@@ -168,6 +168,7 @@ class PVNet2():
 
         # For saving and restoring
         self.saver = tf.train.Saver()
+        '''
         
     def predict(self, state, v=True):
         #state.get_state().reshape(-1, 1, 8, 8)
